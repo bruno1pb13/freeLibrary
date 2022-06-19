@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="../css/bootstrap.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <link rel="shortcut icon" href="/Assets/favicon.svg" type="image/x-icon">
+
+  <title>Free Library | Log In</title>
+</head>
+
+<body style="background: #007981">
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="liveToast" class="toast" role="alert" aria-live="assertive" aria-atomic="true" data-bs-autohide="false">
+      <div class="toast-header">
+        <img src="/Assets/favicon.svg" class="rounded me-2" style="max-width: 20px;" alt="...">
+        <strong class="me-auto">Your email already exists.</strong>
+        <small>1 sec ago</small>
+        <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+      </div>
+      <div class="toast-body">
+        If you wish to retrieve your user account information, please see FAQ: <a href="#">How do I retrieve my username
+          and/or password?</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="container formContainer" style="height: min(100vh, 100%);width: 100vw; background-color: #007981;padding: 3em 0">
+    <div class="header">
+      <img src="../Assets/faviconWhite.png" alt="">
+      <div class="section title" id="header" style="text-align: center;">
+        Free library
+      </div>
+    </div>
+    <div class="content" style="height: 38vh !important">
+      <div class="contentHeader title" style="text-align:center;padding-bottom: 1em;color:var(--Primary)">
+        Log In
+      </div>
+      <div class="contentMain" id="form1" style="">
+        <form action="" id="signUp">
+
+          <div class="mb-3">
+            <input type="text" autocomplete="email" class="form-control" id="email" placeholder="Email">
+          </div>
+
+          <div class="mb-3">
+            <input type="password" autocomplete="new-password" class="form-control" id="password" placeholder="password"
+              minlength="11">
+          </div>
+
+          <button type="submit" class=" btn-submit2" id="createAccount">Log In</button>
+        </form>
+        <!-- <div style="text-align:center;width: 100%;display: flex;justify-content: center; padding: 0.6em 0;">Or</div> -->
+        <!-- <button type="submit" class=" btn-submit" id="createAccount">
+          <div style="display: flex; justify-content:center">
+            <img src="/Assets/github.svg" alt="Github Icon">
+            <span style="margin: 0 .5em">
+                Log In with GitHub
+            </span>
+          </div>
+        </button> -->
+
+
+      </div>
+      
+    </div>
+
+  </div>
+
+  <footer style="border-top: 1px solid white;padding: 4em 0 ; background:#007981;display: flex;align-items: center;">
+    <div class="container">
+      <div class="row align-items-start" id="footerContent">
+        <div class="col">
+          <div class="card">
+
+            <div class="card-body">
+              <h5 class="card-title">Subscribe to our newsletter</h5>
+              <p class="card-text">Be part of this community</p>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Bruno@loremIpsum.org"
+                  aria-label="Recipient's email" aria-describedby="basic-addon2">
+              </div>
+              <div style="display: flex;justify-content:end">
+                <button class="btn btn-primary" type="submit">Subscribe</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+
+          <div class="row align-items-start" id="tableContent">
+            <table style="color: white;">
+              <thead>
+                <tr style="font-size: 1.3em;">
+                  <th scope="col">About</th>
+                  <th scope="col">Marketing</th>
+                  <th scope="col">Press</th>
+                  <th scope="col">API</th>
+
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>This project</td>
+                  <td>Brand</td>
+                  <td>press Contact </td>
+                  <td>Who can use</td>
+                </tr>
+                <tr>
+                  <td>Our team</td>
+                  <td>Design Sistem</td>
+                  <td></td>
+                  <td>Documentation</td>
+                </tr>
+                <tr>
+                  <td>Financial Reports</td>
+                  <td>Colors</td>
+                  <td></td>
+                  <td>Developers </td>
+                </tr>
+                <tr>
+                  <td>Contact</td>
+                  <td></td>
+                  <td></td>
+                  <td>Need help?</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div class="row align-items-start" style="margin-top: 2em; color:white;display: none;"
+            id="tableContentMobile">
+
+
+            <ul>
+              <li>
+                About
+                <ul>
+                  <li>This project</li>
+                  <li>Our team</li>
+                  <li>Financial Reports</li>
+                  <li>Contact</li>
+                </ul>
+              </li>
+
+              <li style="margin-top: 1em">
+                Marketing
+                <ul>
+                  <li>Brand</li>
+                  <li>Design Sistem</li>
+                  <li>Colors</li>
+                </ul>
+              </li>
+
+              <li style="margin-top: 1em">
+                Press
+                <ul>
+                  <li>press Contact</li>
+                </ul>
+              </li>
+
+              <li style="margin-top: 1em">
+                API
+                <ul>
+                  <li>Who can use</li>
+                  <li>Documentation</li>
+                  <li>Developers</li>
+                  <li>Need help?</li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+
+
+        </div>
+
+      </div>
+    </div>
+  </footer>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.0.0-alpha.1/axios.min.js"></script>
+  <script src="./js/login.js"></script>
+  <script>
+
+    window.onload = function () {
+
+      preventDefault()
+
+    }
+
+    function preventDefault() {
+
+      form = document.getElementById('signUp')
+      form.addEventListener('submit', function (e) {
+        e.preventDefault()
+        logIn()
+      })
+
+
+    }
+
+  </script>
+</body>
+
+</html>

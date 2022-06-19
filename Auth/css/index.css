@@ -1,0 +1,147 @@
+*{
+    font-family: 'Merriweather', serif;
+    padding: 0;
+    margin: 0;
+
+    --Primary: #007981
+}
+
+body{
+    background: var(--Primary);
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+}
+
+.title{
+    font-size: 2em;
+    color: white;
+    font-weight: 700;
+    margin-top: .3em;
+}
+
+
+.form-check-input{
+    margin-top: 0 !important;
+}
+
+.content{
+    width: min(500px, 80%);
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    margin-top: 4em;
+    border-radius: 16px;
+    padding: 2em 2em
+}
+
+.form-control{
+    background-color: rgba(255, 255, 255, 0) !important;
+    border: 1px solid var(--Primary) !important;
+    font-weight: 500;
+    line-height: 2.5 !important;
+}
+
+.form-control::placeholder {
+    color: var(--Primary) !important;
+    font-weight: 500 !important;
+
+
+}
+
+.defaultLink{
+    color: black;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.btn-submit{
+    background-color: white;
+    width: 100%;
+    height: 3em;
+    border-radius: 6px;
+    color: var(--Primary);
+    transition: .2s ease-in-out;
+    border: 1px solid var(--Primary);
+}
+
+.btn-submit2{
+    background-color: var(--Primary);
+    width: 100%;
+    height: 3em;
+    border-radius: 6px;
+    color: white;
+    transition: .2s ease-in-out;
+    border: 1px solid var(--Primary);
+}
+
+
+.btn-submit:hover .btn-submit2:hover{
+    transform: scale(1.01);
+}
+
+.toastShow{
+    display: block !important;
+    opacity: 1 !important;
+    transition: .8s ease-in-out !important;
+
+}
+
+
+.verifyCode{
+    width: 100%;
+    font-size: 6em;
+    text-align: center;
+    letter-spacing: 29px;
+    border-bottom: 1px solid black;
+    border-left: none;
+    border-top: none;
+    border-right: none;
+}
+
+
+.verifyCode:focus, .verifyCode:focus{
+    outline: none;
+}
+
+#liveToast{
+    opacity: 0 ;
+}
+
+
+
+
+@media screen and (max-width: 1232px){
+    #footerContent{
+        flex-direction: column;
+    }
+
+    #tableContent{
+        margin-top: 2em
+    }
+}
+
+@media screen and (max-width: 600px){
+    #footerContent{
+        flex-direction: column;
+    }
+
+    #tableContent{
+        display: none;
+    }
+
+    #tableContentMobile{
+        display: block !important;
+    }
+}
